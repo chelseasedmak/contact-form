@@ -1,0 +1,30 @@
+// variables 
+
+//colors
+$primary-color: #0C7D69;
+$accent-color: #86A2A5;
+$text-color: #2A4144;
+$container-color: #FFFFFF;
+$background-color: #E0F1E8;
+$error-color: #D73C3C;
+
+//font families
+$font-primary: "Karla", sans-serif;
+
+//font sizes 
+$font-size-header: 2em;
+$font-size-subheader: 1.1em;
+$font-size-body: 1em;
+
+//font weights
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+
+
+//practice
+h1 {
+    font-family: $font-primary;
+    color: $text-color;
+    font-size: $font-size-header;
+    font-weight: $font-weight-bold;
+}
