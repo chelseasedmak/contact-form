@@ -12,9 +12,9 @@ $error-color: #D73C3C;
 $font-primary: "Karla", sans-serif;
 
 //font sizes 
-$font-size-header: 2em;
-$font-size-subheader: 1.1em;
-$font-size-body: 1em;
+$font-size-large: 2em;
+$font-size-medium: 1.1em;
+$font-size-small: 1em;
 
 //font weights
 $font-weight-bold: 700;
@@ -32,12 +32,103 @@ body {
     font-family: $font-primary;
 }
 
-h1 {
-    color: $text-color;
-    font-size: $font-size-header;
-    font-weight: $font-weight-bold;
+form {
+    background-color: $container-color;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 104px;
 }
 
-input[type="submit"] {
-    font-family: font;
+h1 {
+    color: $text-color;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+    line-height: 0%;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+.first-line-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+fieldset {
+    border: none;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: -14px;
+    margin-right: -14px;
+
+}
+
+.general-enquiry,
+.support-request {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+input[type="radio"] {
+    accent-color: $primary-color;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+textarea {
+    padding: 16px;
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.consent-container {
+    margin-top: 40px;
+}
+
+input[type="checkbox"] {
+    accent-color: $primary-color;
+}
+
+label,
+legend {
+    font-size: $font-size-small;
+    color: $text-color;
+}
+
+
+
+.submit-btn button {
+    font-family: $font-primary;
+    background-color: $primary-color;
+    color: $container-color;
+    margin-top: 40px;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    font-size: $font-size-small;
 }
