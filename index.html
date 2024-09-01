@@ -11,9 +11,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
 </head>
-<h1>Contact us</h1>
 
-<body>
+<form>
+    <h1>Contact us</h1>
+
+    <div class="first-line-container">
+        <div class="first-name-container">
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" name="First Name">
+        </div>
+        <div class="last-name-container">
+            <label for="first-name">Last Name*</label>
+            <input type="text" id="last-name" name="Last Name">
+        </div>
+    </div>
+
+    <div class="email-container">
+        <label for="email">Email*</label>
+        <input type="text" id="email" name="email">
+    </div>
+
+    <div class="query-type-container">
+
+        <fieldset>
+            <legend> Query Type* </legend>
+            <div class="general-enquiry">
+                <input type="radio" id="general-enquiry" name="option" value="General Enquiry">
+                <label for="general-enquiry">General Enquiry</label>
+            </div>
+            <div class="support-request">
+                <input type="radio" id="support-request" name="option" value="Support Request">
+                <label for="support-request">Support Request</label>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="message-container">
+        <div class="message">
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </div>
+    </div>
+
+    <div class="consent-container">
+        <input type="checkbox" id="consent" name="consent" value="Contact Consent">
+        <label for="subscribe">I consent to being contacted by the team.</label>
+    </div>
+
+    <div class="submit-btn">
+        <button type="submit">Submit</button>
+    </div>
+
+
+</form>
 
 </body>
 
