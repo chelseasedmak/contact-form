@@ -7,6 +7,7 @@ $text-color: #2A4144;
 $container-color: #FFFFFF;
 $background-color: #E0F1E8;
 $error-color: #D73C3C;
+$button-hover-color: #063F35;
 
 //font families
 $font-primary: "Karla", sans-serif;
@@ -57,6 +58,21 @@ input[type="text"] {
     margin-top: 8px;
 }
 
+input[type="text"]:hover,
+textarea:hover,
+.general-enquiry:hover,
+.support-request:hover {
+    border: 1px solid $primary-color;
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border: 2px solid $primary-color;
+    outline: none;
+    cursor: pointer;
+}
+
 .first-line-container {
     flex: 1;
     display: flex;
@@ -88,6 +104,8 @@ fieldset {
     margin-top: 8px;
 }
 
+
+
 input[type="radio"] {
     accent-color: $primary-color;
 }
@@ -99,14 +117,18 @@ input[type="radio"] {
 }
 
 textarea {
-    padding: 16px;
+    padding: 12px;
     border: 1px solid $accent-color;
     border-radius: 4px;
     resize: vertical;
 }
 
+
 .consent-container {
     margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 input[type="checkbox"] {
@@ -120,7 +142,6 @@ legend {
 }
 
 
-
 .submit-btn button {
     font-family: $font-primary;
     background-color: $primary-color;
@@ -131,4 +152,8 @@ legend {
     border: 1px solid $accent-color;
     border-radius: 4px;
     font-size: $font-size-small;
+}
+
+.submit-btn button:hover {
+    background-color: $button-hover-color;
 }

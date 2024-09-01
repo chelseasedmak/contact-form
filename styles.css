@@ -32,6 +32,21 @@ input[type=text] {
   margin-top: 8px;
 }
 
+input[type=text]:hover,
+textarea:hover,
+.general-enquiry:hover,
+.support-request:hover {
+  border: 1px solid #0C7D69;
+  cursor: pointer;
+}
+
+input[type=text]:focus,
+textarea:focus {
+  border: 2px solid #0C7D69;
+  outline: none;
+  cursor: pointer;
+}
+
 .first-line-container {
   flex: 1;
   display: flex;
@@ -73,7 +88,7 @@ input[type=radio] {
 }
 
 textarea {
-  padding: 16px;
+  padding: 12px;
   border: 1px solid #86A2A5;
   border-radius: 4px;
   resize: vertical;
@@ -81,6 +96,9 @@ textarea {
 
 .consent-container {
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 input[type=checkbox] {
@@ -103,6 +121,10 @@ legend {
   border: 1px solid #86A2A5;
   border-radius: 4px;
   font-size: 1em;
+}
+
+.submit-btn button:hover {
+  background-color: #063F35;
 }
 
 /*# sourceMappingURL=styles.css.map */
