@@ -7,7 +7,7 @@ body {
   font-family: "Karla", sans-serif;
 }
 
-form {
+#contact-form {
   background-color: #FFFFFF;
   padding: 40px;
   border-radius: 8px;
@@ -92,6 +92,7 @@ textarea {
   border: 1px solid #86A2A5;
   border-radius: 4px;
   resize: vertical;
+  font-family: "Karla", sans-serif;
 }
 
 .consent-container {
@@ -125,6 +126,17 @@ legend {
 
 .submit-btn button:hover {
   background-color: #063F35;
+}
+
+.error-message {
+  color: #D73C3C;
+  font-size: 1em;
+  display: none;
+}
+
+input.error,
+textarea.error {
+  border-color: #D73C3C;
 }
 
 /*# sourceMappingURL=styles.css.map */

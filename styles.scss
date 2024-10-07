@@ -22,8 +22,7 @@ $font-weight-bold: 700;
 $font-weight-regular: 400;
 
 
-//practice
-
+//practice contact form
 body {
     background-color: $background-color;
     display: flex;
@@ -33,7 +32,7 @@ body {
     font-family: $font-primary;
 }
 
-form {
+#contact-form {
     background-color: $container-color;
     padding: 40px;
     border-radius: 8px;
@@ -48,6 +47,7 @@ h1 {
     margin-bottom: 40px;
     letter-spacing: -1px;
 }
+
 
 input[type="text"] {
     width: 100%;
@@ -105,7 +105,6 @@ fieldset {
 }
 
 
-
 input[type="radio"] {
     accent-color: $primary-color;
 }
@@ -121,6 +120,7 @@ textarea {
     border: 1px solid $accent-color;
     border-radius: 4px;
     resize: vertical;
+    font-family: $font-primary;
 }
 
 
@@ -156,4 +156,15 @@ legend {
 
 .submit-btn button:hover {
     background-color: $button-hover-color;
+}
+
+.error-message {
+    color: $error-color;
+    font-size: $font-size-small;
+    display: none;
+}
+
+input.error,
+textarea.error {
+    border-color: $error-color;
 }
