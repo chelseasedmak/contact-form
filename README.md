@@ -1,3 +1,3 @@
 # contact-form
 
-Simple contact form - practiing my scss skills along with javacript validation. 
+Simple contact form - practicing my SCSS skills along with Javacript validation.  
